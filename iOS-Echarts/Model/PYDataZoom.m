@@ -55,5 +55,7 @@ PYPropertyEqualImpTemplate(PYDataZoom, NSNumber *, end);
 PYPropertyEqualImpTemplate(PYDataZoom, BOOL, showDetail);
 PYPropertyEqualImpTemplate(PYDataZoom, BOOL, realtime);
 PYPropertyEqualImpTemplate(PYDataZoom, BOOL, zoomLock);
+PYPropertyEqualImpTemplate(PYDataZoom, NSString *,type);
+
 
 @end

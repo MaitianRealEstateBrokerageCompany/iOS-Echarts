@@ -38,6 +38,8 @@
 @property (nonatomic, assign) BOOL showDetail;
 @property (nonatomic, assign) BOOL realtime;
 @property (nonatomic, assign) BOOL zoomLock;
+@property (nonatomic, strong) NSString *type;
+
 
 PYInitializerTemplate(PYDataZoom, dataZoom);
 
@@ -61,5 +63,7 @@ PYPropertyEqualTemplate(PYDataZoom, NSNumber *, end);
 PYPropertyEqualTemplate(PYDataZoom, BOOL, showDetail);
 PYPropertyEqualTemplate(PYDataZoom, BOOL, realtime);
 PYPropertyEqualTemplate(PYDataZoom, BOOL, zoomLock);
+PYPropertyEqualTemplate(PYDataZoom, NSString *,type);
+
 
 @end
