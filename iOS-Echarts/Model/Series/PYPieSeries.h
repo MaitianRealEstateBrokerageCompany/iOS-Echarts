@@ -7,6 +7,7 @@
 //
 
 #import "PYSeries.h"
+@class MTPieLabel;
 
 typedef NSString *PYPieSeriesRoseType;
 
@@ -30,6 +31,7 @@ FOUNDATION_EXPORT PYPieSeriesRoseType const PYPieSeriesRoseTypeArea;
 @property (nonatomic, strong) NSNumber *selectedOffset;
 @property (nonatomic, strong) id selectedMode;
 @property (nonatomic, assign) BOOL legendHoverLink;
+@property (nonatomic, strong) MTPieLabel *label;
 
 PYInitializerTemplate(PYPieSeries, series);
 
@@ -42,5 +44,6 @@ PYPropertyEqualTemplate(PYPieSeries, PYPieSeriesRoseType, roseType);
 PYPropertyEqualTemplate(PYPieSeries, NSNumber *, selectedOffset);
 PYPropertyEqualTemplate(PYPieSeries, id, selectedMode);
 PYPropertyEqualTemplate(PYPieSeries, BOOL, legendHoverLink);
+PYPropertyEqualTemplate(PYPieSeries, MTPieLabel *, label);
 
 @end

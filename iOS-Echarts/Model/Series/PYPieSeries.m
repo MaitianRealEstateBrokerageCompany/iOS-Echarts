@@ -33,6 +33,7 @@ static NSArray<PYPieSeriesRoseType> *pieSeriesRoleTypeScope;
         _clockWise = YES;
         _selectedMode = @(10);
         _legendHoverLink = YES;
+        _label = [[MTPieLabel alloc] init];
     }
     return self;
 }
@@ -57,5 +58,6 @@ PYPropertyEqualImpTemplate(PYPieSeries, PYPieSeriesRoseType, roseType);
 PYPropertyEqualImpTemplate(PYPieSeries, NSNumber *, selectedOffset);
 PYPropertyEqualImpTemplate(PYPieSeries, id, selectedMode);
 PYPropertyEqualImpTemplate(PYPieSeries, BOOL, legendHoverLink);
+PYPropertyEqualImpTemplate(PYPieSeries, MTPieLabel *, label);
 
 @end
