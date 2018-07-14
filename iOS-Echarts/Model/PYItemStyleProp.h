@@ -14,12 +14,14 @@
 
 @property (nonatomic, assign) BOOL show;
 @property (nonatomic, strong) NSNumber *length;
+@property (nonatomic, strong) NSNumber *length2;
 @property (nonatomic, strong) PYLineStyle *lineStyle;
 
 PYInitializerTemplate(PYLabelLine, labelLine);
 
 PYPropertyEqualTemplate(PYLabelLine, BOOL, show);
 PYPropertyEqualTemplate(PYLabelLine, NSNumber *, length);
+PYPropertyEqualTemplate(PYLabelLine, NSNumber *, length2);
 PYPropertyEqualTemplate(PYLabelLine, PYLineStyle *, lineStyle);
 
 @end

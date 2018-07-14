@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A55B0F20F9A79A0021FFB9 /* MTPieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */; };
 		542992691E161CA50082986D /* WKEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542992681E161CA50082986D /* WKEchartsView.m */; };
 		5429926C1E1621F60082986D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5429926B1E1621F60082986D /* WebKit.framework */; };
 		542992701E1622E50082986D /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5429926E1E1622E50082986D /* WKWebViewController.m */; };
@@ -210,6 +211,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A55B0D20F9A7990021FFB9 /* MTPieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPieLabel.h; sourceTree = "<group>"; };
+		09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPieLabel.m; sourceTree = "<group>"; };
 		542992671E161CA50082986D /* WKEchartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKEchartsView.h; sourceTree = "<group>"; };
 		542992681E161CA50082986D /* WKEchartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKEchartsView.m; sourceTree = "<group>"; };
 		5429926B1E1621F60082986D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -616,6 +619,8 @@
 		6F4D58AD1D4FE34F00246943 /* Series */ = {
 			isa = PBXGroup;
 			children = (
+				09A55B0D20F9A7990021FFB9 /* MTPieLabel.h */,
+				09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */,
 				6F4D58AE1D4FE34F00246943 /* PYCartesianSeries.h */,
 				6F4D58AF1D4FE34F00246943 /* PYCartesianSeries.m */,
 				6F4D58B01D4FE34F00246943 /* PYEventRiverSeries.h */,
@@ -1105,6 +1110,7 @@
 				6F4D59021D4FE34F00246943 /* PYHeatmapSeries.m in Sources */,
 				6F4D58DD1D4FE34F00246943 /* PYAxisLabel.m in Sources */,
 				6F9DCF0F1D7841D6007CEAD2 /* ChordDemoController.m in Sources */,
+				09A55B0F20F9A79A0021FFB9 /* MTPieLabel.m in Sources */,
 				6F4D58EF1D4FE34F00246943 /* PYNoDataLoadingOption.m in Sources */,
 				6FF570A71D88597B007AA7A6 /* PYScatterDemoOptions.m in Sources */,
 				6F9DCF171D7841D6007CEAD2 /* GaugesDemoController.m in Sources */,

@@ -33,6 +33,7 @@ PYInitializerImpTemplate(PYLabelLine);
 
 PYPropertyEqualImpTemplate(PYLabelLine, BOOL, show);
 PYPropertyEqualImpTemplate(PYLabelLine, NSNumber *, length);
+PYPropertyEqualImpTemplate(PYLabelLine, NSNumber *, length2);
 PYPropertyEqualImpTemplate(PYLabelLine, PYLineStyle *, lineStyle);
 
 @end
