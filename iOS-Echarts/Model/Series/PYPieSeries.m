@@ -7,6 +7,7 @@
 //
 
 #import "PYPieSeries.h"
+#import "MTPieLabel.h"
 
 PYPieSeriesRoseType const PYPieSeriesRoseTypeRadius = @"radius";
 PYPieSeriesRoseType const PYPieSeriesRoseTypeArea   = @"area";
