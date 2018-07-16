@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09A55B0F20F9A79A0021FFB9 /* MTPieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */; };
+		09C2C3A920FC9A80007FDA8A /* echarts.html in Resources */ = {isa = PBXBuildFile; fileRef = 09C2C3A820FC9A80007FDA8A /* echarts.html */; };
 		542992691E161CA50082986D /* WKEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542992681E161CA50082986D /* WKEchartsView.m */; };
 		5429926C1E1621F60082986D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5429926B1E1621F60082986D /* WebKit.framework */; };
 		542992701E1622E50082986D /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5429926E1E1622E50082986D /* WKWebViewController.m */; };
@@ -66,7 +67,6 @@
 		6F4D590A1D4FE34F00246943 /* PYTreeSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58C91D4FE34F00246943 /* PYTreeSeries.m */; };
 		6F4D590B1D4FE34F00246943 /* PYVennSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58CB1D4FE34F00246943 /* PYVennSeries.m */; };
 		6F4D590C1D4FE34F00246943 /* PYWordCloudSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58CD1D4FE34F00246943 /* PYWordCloudSeries.m */; };
-		6F4D590D1D4FE34F00246943 /* echarts.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F4D58CF1D4FE34F00246943 /* echarts.html */; };
 		6F4D590F1D4FE34F00246943 /* PYJsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58D41D4FE34F00246943 /* PYJsonUtil.m */; };
 		6F4D59101D4FE34F00246943 /* PYEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58D71D4FE34F00246943 /* PYEchartsView.m */; };
 		6F4D59111D4FE34F00246943 /* PYZoomEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58D91D4FE34F00246943 /* PYZoomEchartsView.m */; };
@@ -136,7 +136,6 @@
 		6F743AD21D7B03F700C94967 /* PYEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58D71D4FE34F00246943 /* PYEchartsView.m */; };
 		6F743AD31D7B03F700C94967 /* PYZoomEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D58D91D4FE34F00246943 /* PYZoomEchartsView.m */; };
 		6F743AD51D7B052400C94967 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 6F7352BC1D50A779006CD119 /* js */; };
-		6F743AD61D7B052700C94967 /* echarts.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F4D58CF1D4FE34F00246943 /* echarts.html */; };
 		6F743AD71D7B40FA00C94967 /* PYLineDemoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DCF3A1D7842FF007CEAD2 /* PYLineDemoOptions.m */; };
 		6F743ADA1D7C6C2B00C94967 /* PYBarDemoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F743AD91D7C6C2B00C94967 /* PYBarDemoOptions.m */; };
 		6F743AE21D7D8ADA00C94967 /* PYPieDemoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F743AE11D7D8ADA00C94967 /* PYPieDemoOptions.m */; };
@@ -213,6 +212,7 @@
 /* Begin PBXFileReference section */
 		09A55B0D20F9A7990021FFB9 /* MTPieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPieLabel.h; sourceTree = "<group>"; };
 		09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPieLabel.m; sourceTree = "<group>"; };
+		09C2C3A820FC9A80007FDA8A /* echarts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = echarts.html; sourceTree = "<group>"; };
 		542992671E161CA50082986D /* WKEchartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKEchartsView.h; sourceTree = "<group>"; };
 		542992681E161CA50082986D /* WKEchartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKEchartsView.m; sourceTree = "<group>"; };
 		5429926B1E1621F60082986D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -328,7 +328,6 @@
 		6F4D58CB1D4FE34F00246943 /* PYVennSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYVennSeries.m; sourceTree = "<group>"; };
 		6F4D58CC1D4FE34F00246943 /* PYWordCloudSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYWordCloudSeries.h; sourceTree = "<group>"; };
 		6F4D58CD1D4FE34F00246943 /* PYWordCloudSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYWordCloudSeries.m; sourceTree = "<group>"; };
-		6F4D58CF1D4FE34F00246943 /* echarts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = echarts.html; sourceTree = "<group>"; };
 		6F4D58D31D4FE34F00246943 /* PYJsonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJsonUtil.h; sourceTree = "<group>"; };
 		6F4D58D41D4FE34F00246943 /* PYJsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJsonUtil.m; sourceTree = "<group>"; };
 		6F4D58D61D4FE34F00246943 /* PYEchartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYEchartsView.h; sourceTree = "<group>"; };
@@ -664,7 +663,7 @@
 			children = (
 				6F743AEA1D7E1C2D00C94967 /* theme */,
 				6F7352BC1D50A779006CD119 /* js */,
-				6F4D58CF1D4FE34F00246943 /* echarts.html */,
+				09C2C3A820FC9A80007FDA8A /* echarts.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -982,6 +981,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F743A6F1D78B1CF00C94967 /* Main.storyboard in Resources */,
+				09C2C3A920FC9A80007FDA8A /* echarts.html in Resources */,
 				6F13257F1D93D0650006F114 /* MultiEcharts2Controller.xib in Resources */,
 				6F9DCF181D7841D6007CEAD2 /* GaugesDemoController.xib in Resources */,
 				6F9DCF1A1D7841D6007CEAD2 /* LineDemoController.xib in Resources */,
@@ -1001,7 +1001,6 @@
 				6F9DCF231D7841D6007CEAD2 /* PieDemoController.xib in Resources */,
 				6F9DCF211D7841D6007CEAD2 /* OtherDemoController.xib in Resources */,
 				6F9DCF251D7841D6007CEAD2 /* RadarDemoController.xib in Resources */,
-				6F4D590D1D4FE34F00246943 /* echarts.html in Resources */,
 				6F9DCF0C1D7841D6007CEAD2 /* BarDemoController.xib in Resources */,
 				6F9DCF121D7841D6007CEAD2 /* EventRiverController.xib in Resources */,
 				6F9DCF1F1D7841D6007CEAD2 /* MultiEchartsController.xib in Resources */,
@@ -1024,7 +1023,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F743A6E1D78B01B00C94967 /* Main.storyboard in Resources */,
-				6F743AD61D7B052700C94967 /* echarts.html in Resources */,
 				6F743AD51D7B052400C94967 /* js in Resources */,
 				6F743AEC1D7E1C2D00C94967 /* theme in Resources */,
 				6F743A6D1D78B01900C94967 /* Assets.xcassets in Resources */,

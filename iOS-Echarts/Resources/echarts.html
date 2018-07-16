@@ -129,8 +129,7 @@
         }
     }
     function addEchartActionHandler(eventName) {
-        var ecConfig = echarts.config;
-        myChart.on(eventName, echartViewAction);
+        myChart.on(eventName, echartViewEvent);
     }
     function removeEchartActionHandler(name) {
         myChart.un(name, echartViewAction);
@@ -142,6 +141,26 @@
         myChart.component.dataZoom.absoluteZoom({'start':start, 'end': end});
         myChart.setOption(option, true);
     }
+    // Action
+    function dispatchAction(param) {
+            alert("dispatchAction: " + param);
+            myChart.dispatchAction(param);
+    }
+    // Events
+    function echartViewEvent(param) {
+            //alert("echartViewEvent: " + param);
+            var seen = [];
+            var jsonString = JSON.stringify(param, function(key, val) {
+                if (val != null && typeof val == "object") {
+                    if (seen.indexOf(val) >= 0) {
+                        return;
+                    }
+                    seen.push(val);
+                }
+                return val;
+            });
+            eval("window.webkit.messageHandlers." + param.type + ".postMessage(" + jsonString + ")");
+        }
     </script>
 </head>
 <body style="background-color: transparent;margin:0px"><!-- transparent-->
