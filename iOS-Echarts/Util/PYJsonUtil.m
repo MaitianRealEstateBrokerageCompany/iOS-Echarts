@@ -36,7 +36,6 @@
         jsonData = [self getJSONData:obj];
         jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     }
-    jsonString = @"{\"xAxis\":{\"triggerEvent\":true,\"type\":\"category\",\"data\":[\"Mon\",\"Mon\",\"Mon\",\"Mon\",\"Mon\",\"Mon\",\"Mon\"]},\"yAxis\":{\"type\":\"value\"},\"series\":[{\"data\":[820,932,901,934,1290,1330,1320],\"type\":\"line\"}]}";
     return jsonString;
 }
 
