@@ -161,6 +161,21 @@
             });
             eval("window.webkit.messageHandlers." + param.type + ".postMessage(" + jsonString + ")");
         }
+    // 高亮：只针对只有1种系列
+    function highlightSlectIndex(index) {
+        // 取消之前高亮的图形
+        myChart.dispatchAction({
+                               type: 'downplay',
+                               seriesIndex: 0,
+                               dataIndex: highlightIndex
+                               });
+        highlightIndex = index;
+         myChart.dispatchAction({
+                                type: 'highlight',
+                                seriesIndex: 0,
+                                dataIndex: index
+                                });
+    }
     </script>
 </head>
 <body style="background-color: transparent;margin:0px"><!-- transparent-->
