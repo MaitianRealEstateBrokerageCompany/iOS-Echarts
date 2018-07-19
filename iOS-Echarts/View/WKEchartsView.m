@@ -150,12 +150,6 @@
 - (void)resizeDiv {
     float height = self.frame.size.height;
     float width = self.frame.size.width;
-    if (!CGSizeEqualToSize(_divSize, CGSizeZero)) {
-        height = _divSize.height;
-        width = _divSize.width;
-    } else {
-        _divSize = CGSizeMake(width, height);
-    }
     NSString *divSizeCss = [NSString stringWithFormat:@"'height:%.0fpx;width:%.0fpx;'", height, width];
     NSString *js = [NSString stringWithFormat:@"%@(%@)", @"resizeDiv", divSizeCss];
     [self callJsMethods:js];
