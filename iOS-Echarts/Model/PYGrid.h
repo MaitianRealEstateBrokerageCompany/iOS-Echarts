@@ -29,6 +29,14 @@
 @property (nonatomic, strong) PYColor *backgroundColor;
 @property (nonatomic, strong) NSNumber *borderWidth;
 @property (nonatomic, strong) PYColor *borderColor;
+//距顶部距离 百分比 或具体数值
+@property (nonatomic, strong) id top;
+//距左侧距离 百分比 或具体数值
+@property (nonatomic, strong) id left;
+//距右侧距离 百分比 或具体数值
+@property (nonatomic, strong) id right;
+//距底部距离 百分比 或具体数值
+@property (nonatomic, strong) id bottom;
 
 PYInitializerTemplate(PYGrid, grid);
 
@@ -43,5 +51,9 @@ PYPropertyEqualTemplate(PYGrid, NSNumber *, height);
 PYPropertyEqualTemplate(PYGrid, PYColor *, backgroundColor);
 PYPropertyEqualTemplate(PYGrid, NSNumber *, borderWidth);
 PYPropertyEqualTemplate(PYGrid, PYColor *, borderColor);
+PYPropertyEqualTemplate(PYGrid, id, top);
+PYPropertyEqualTemplate(PYGrid, id, left);
+PYPropertyEqualTemplate(PYGrid, id, right);
+PYPropertyEqualTemplate(PYGrid, id, bottom);
 
 @end

@@ -41,5 +41,9 @@ PYPropertyEqualImpTemplate(PYGrid, NSNumber *, height);
 PYPropertyEqualImpTemplate(PYGrid, PYColor *, backgroundColor);
 PYPropertyEqualImpTemplate(PYGrid, NSNumber *, borderWidth);
 PYPropertyEqualImpTemplate(PYGrid, PYColor *, borderColor);
+PYPropertyEqualImpTemplate(PYGrid, id, top);
+PYPropertyEqualImpTemplate(PYGrid, id, right);
+PYPropertyEqualImpTemplate(PYGrid, id, left);
+PYPropertyEqualImpTemplate(PYGrid, id, bottom);
 
 @end
