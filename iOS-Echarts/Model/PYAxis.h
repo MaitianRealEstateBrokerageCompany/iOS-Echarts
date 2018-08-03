@@ -46,6 +46,7 @@ FOUNDATION_EXPORT PYAxisType const PYAxisTypeLog;
 @property (nonatomic, strong) PYAxisSplitLine *splitLine;
 @property (nonatomic, strong) PYSplitArea *splitArea;
 @property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, strong) NSNumber *interval;
 
 PYInitializerTemplate(PYAxis, axis);
 
@@ -72,6 +73,8 @@ PYPropertyEqualTemplate(PYAxis, PYSplitArea *, splitArea);
 PYPropertyEqualTemplate(PYAxis, NSMutableArray *, data);
 
 PYAddMethodTemplate(PYAxis, NSObject, Data, data);
+PYPropertyEqualTemplate(PYAxis, NSNumber *, interval);
+
 
 
 @end

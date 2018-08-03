@@ -83,5 +83,6 @@ PYPropertyEqualImpTemplate(PYAxis, PYSplitArea *, splitArea);
 PYPropertyEqualImpTemplate(PYAxis, NSMutableArray *, data);
 
 PYAddMethodImpTemplate(PYAxis, NSObject, Data, data);
+PYPropertyEqualImpTemplate(PYAxis, NSNumber *, interval);
 
 @end
