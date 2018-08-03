@@ -42,6 +42,8 @@ FOUNDATION_EXPORT PYTooltipTrigger const PYTooltipTriggerAxis;
 @property (nonatomic, strong) id padding;
 @property (nonatomic, strong) PYAxisPointer *axisPointer;
 @property (nonatomic, strong) PYTextStyle *textStyle;
+//提示框是否显示在图表区域内
+@property (nonatomic, assign) BOOL confine;
 
 PYInitializerTemplate(PYTooltip, tooltip);
 
@@ -64,5 +66,6 @@ PYPropertyEqualTemplate(PYTooltip, NSNumber *, borderWidth);
 PYPropertyEqualTemplate(PYTooltip, id, padding);
 PYPropertyEqualTemplate(PYTooltip, PYAxisPointer *, axisPointer);
 PYPropertyEqualTemplate(PYTooltip, PYTextStyle *, textStyle);
+PYPropertyEqualTemplate(PYTooltip, BOOL, confine);
 
 @end

@@ -49,6 +49,7 @@ static NSArray<PYTooltipTrigger> *tooltipTriggerScope;
         _borderRadius = @(4);
         _borderWidth = @(0);
         _padding = @(5);
+        _confine = false;
         _axisPointer = [[PYAxisPointer alloc] init];
         _axisPointer.type = PYAxisPointerTypeLine;
         _axisPointer.lineStyle = [[PYLineStyle alloc] init];
@@ -95,5 +96,6 @@ PYPropertyEqualImpTemplate(PYTooltip, NSNumber *, borderWidth);
 PYPropertyEqualImpTemplate(PYTooltip, id, padding);
 PYPropertyEqualImpTemplate(PYTooltip, PYAxisPointer *, axisPointer);
 PYPropertyEqualImpTemplate(PYTooltip, PYTextStyle *, textStyle);
+PYPropertyEqualImpTemplate(PYTooltip, BOOL, confine);
 
 @end
