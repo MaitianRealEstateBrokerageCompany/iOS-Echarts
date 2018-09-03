@@ -33263,16 +33263,16 @@ var labelLayout = function (seriesModel, r, viewWidth, viewHeight) {
             textAlign = 'center';
         }
         else {
-            var x1 = (isLabelInside ? (layout.r + layout.r0) / 2 * dx : layout.r * dx) + cx;
-            var y1 = (isLabelInside ? (layout.r + layout.r0) / 2 * dy : layout.r * dy) + cy;
+            var x1 = (isLabelInside ? (layout.r*1.1 + layout.r0*1.1) / 2 * dx : layout.r*1.1 * dx) + cx;
+            var y1 = (isLabelInside ? (layout.r*1.1 + layout.r0*1.1) / 2 * dy : layout.r*1.1 * dy) + cy;
 
             textX = x1 + dx * 3;
             textY = y1 + dy * 3;
 
             if (!isLabelInside) {
                 // For roseType
-                var x2 = x1 + dx * (labelLineLen + r - layout.r);
-                var y2 = y1 + dy * (labelLineLen + r - layout.r);
+                var x2 = x1 + dx * (labelLineLen + r - layout.r*1.1);
+                var y2 = y1 + dy * (labelLineLen + r - layout.r*1.1);
                 var x3 = x2 + ((dx < 0 ? -1 : 1) * labelLineLen2);
                 var y3 = y2;
 

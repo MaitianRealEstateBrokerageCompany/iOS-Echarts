@@ -24,6 +24,7 @@
         _backgroundColor = PYRGBA(0, 0, 0, 0);
         _borderWidth = @(1);
         _borderColor = PYRGBA(12, 12, 12, 1);
+        _containLabel = false;
     }
     return self;
 }
@@ -45,5 +46,6 @@ PYPropertyEqualImpTemplate(PYGrid, id, top);
 PYPropertyEqualImpTemplate(PYGrid, id, right);
 PYPropertyEqualImpTemplate(PYGrid, id, left);
 PYPropertyEqualImpTemplate(PYGrid, id, bottom);
+PYPropertyEqualImpTemplate(PYGrid, BOOL, containLabel);
 
 @end

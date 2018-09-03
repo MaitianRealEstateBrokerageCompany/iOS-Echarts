@@ -38,6 +38,8 @@
 //距底部距离 百分比 或具体数值
 @property (nonatomic, strong) id bottom;
 
+@property (nonatomic, assign) BOOL containLabel;
+
 PYInitializerTemplate(PYGrid, grid);
 
 PYPropertyEqualTemplate(PYGrid, NSNumber *, zlevel);
@@ -55,5 +57,6 @@ PYPropertyEqualTemplate(PYGrid, id, top);
 PYPropertyEqualTemplate(PYGrid, id, left);
 PYPropertyEqualTemplate(PYGrid, id, right);
 PYPropertyEqualTemplate(PYGrid, id, bottom);
+PYPropertyEqualTemplate(PYGrid, BOOL, containLabel);
 
 @end
