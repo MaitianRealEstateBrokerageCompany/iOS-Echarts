@@ -32,6 +32,7 @@ FOUNDATION_EXPORT PYPieSeriesRoseType const PYPieSeriesRoseTypeArea;
 @property (nonatomic, strong) id selectedMode;
 @property (nonatomic, assign) BOOL legendHoverLink;
 @property (nonatomic, strong) MTPieLabel *label;
+@property (nonatomic, assign) BOOL avoidLabelOverlap;
 
 PYInitializerTemplate(PYPieSeries, series);
 
@@ -45,5 +46,7 @@ PYPropertyEqualTemplate(PYPieSeries, NSNumber *, selectedOffset);
 PYPropertyEqualTemplate(PYPieSeries, id, selectedMode);
 PYPropertyEqualTemplate(PYPieSeries, BOOL, legendHoverLink);
 PYPropertyEqualTemplate(PYPieSeries, MTPieLabel *, label);
+PYPropertyEqualTemplate(PYPieSeries, BOOL, avoidLabelOverlap);
+
 
 @end

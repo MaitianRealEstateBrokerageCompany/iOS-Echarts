@@ -35,6 +35,7 @@ static NSArray<PYPieSeriesRoseType> *pieSeriesRoleTypeScope;
         _selectedMode = @(10);
         _legendHoverLink = YES;
         _label = [[MTPieLabel alloc] init];
+        _avoidLabelOverlap = YES;
     }
     return self;
 }
@@ -60,5 +61,6 @@ PYPropertyEqualImpTemplate(PYPieSeries, NSNumber *, selectedOffset);
 PYPropertyEqualImpTemplate(PYPieSeries, id, selectedMode);
 PYPropertyEqualImpTemplate(PYPieSeries, BOOL, legendHoverLink);
 PYPropertyEqualImpTemplate(PYPieSeries, MTPieLabel *, label);
+PYPropertyEqualImpTemplate(PYPieSeries, BOOL, avoidLabelOverlap);
 
 @end
