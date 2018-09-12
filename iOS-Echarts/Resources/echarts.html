@@ -179,6 +179,12 @@
                                                           dataIndex: index
                                                           });
         }
+        //隐藏tooltip
+        function hideToolTip() {
+            myChart.dispatchAction({
+                                   type: 'hideTip'
+                                   });
+        }
         </script>
 </head>
 <body style="background-color: transparent;margin:0px"><!-- transparent-->
