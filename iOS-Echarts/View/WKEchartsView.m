@@ -9,7 +9,7 @@
 #import "WKEchartsView.h"
 #import "PYJsonUtil.h"
 
-@interface WKWebView() <WKScriptMessageHandler>
+@interface WKWebView() <WKScriptMessageHandler,UIScrollViewDelegate>
 
 @property (readwrite, copy) WKWebViewConfiguration *configuration;
 
@@ -88,6 +88,7 @@
 #if TARGET_OS_IPHONE
     self.scrollView.bounces = NO;
     self.scrollView.scrollEnabled = NO;
+    self.scrollView.delegate = self;
     
     // set the view background is transparent
     self.opaque = NO;
@@ -269,6 +270,11 @@
 }
 
 #pragma mark - Delegate
+#pragma mark UIScrollViewDelegate
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return nil;
+}
+
 #pragma mark WKNavigationDelegate
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     __weak __typeof(self) weakSelf = self;
