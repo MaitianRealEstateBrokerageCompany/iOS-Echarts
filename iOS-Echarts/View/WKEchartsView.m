@@ -87,7 +87,7 @@
     self.UIDelegate = self;
 #if TARGET_OS_IPHONE
     self.scrollView.bounces = NO;
-    self.scrollView.scrollEnabled = NO;
+    self.scrollView.scrollEnabled = YES;
     self.scrollView.delegate = self;
     
     // set the view background is transparent
