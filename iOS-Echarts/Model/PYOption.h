@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class PYAxis, PYLegend, PYTimeline, PYTitle, PYGrid, PYToolbox, PYDataZoom, PYDataRange, PYPolar, PYRoamController, PYColor, PYTooltip, PYSeries;
+@class PYAxis, PYLegend, PYTimeline, PYTitle, PYGrid, PYToolbox, PYDataZoom, PYDataRange, PYPolar, PYRoamController, PYColor, PYTooltip, PYSeries,MTGraphic;
 
 /**
  *
@@ -37,6 +37,7 @@
 @property (nonatomic, strong) NSMutableArray<PYAxis *> *yAxis;
 @property (nonatomic, strong) NSMutableArray<PYSeries *> *series;
 @property (nonatomic, strong) NSMutableArray<PYOption *> *options;
+@property (nonatomic, strong) NSMutableArray<MTGraphic *> *graphic;
 
 PYInitializerTemplate(PYOption, option);
 
@@ -59,11 +60,14 @@ PYPropertyEqualTemplate(PYOption, NSMutableArray *, xAxis);
 PYPropertyEqualTemplate(PYOption, NSMutableArray *, yAxis);
 PYPropertyEqualTemplate(PYOption, NSMutableArray *, series);
 PYPropertyEqualTemplate(PYOption, NSMutableArray *, options);
+PYPropertyEqualTemplate(PYOption, NSMutableArray *, graphic);
 
 PYAddMethodTemplate(PYOption, PYAxis, XAxis, xAxis);
 PYAddMethodTemplate(PYOption, PYAxis, YAxis, yAxis);
 PYAddMethodTemplate(PYOption, PYSeries, Series, series);
 PYAddMethodTemplate(PYOption, PYPolar, Polar, polar);
 PYAddMethodTemplate(PYOption, PYOption, Options, options);
+PYAddMethodTemplate(PYOption, MTGraphic, Graphic, graphic);
+
 
 @end

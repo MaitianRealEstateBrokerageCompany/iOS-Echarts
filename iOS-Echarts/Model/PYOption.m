@@ -18,6 +18,7 @@
 #import "PYPolar.h"
 #import "PYRoamController.h"
 #import "PYColor.h"
+#import "MTGraphic.h"
 
 @implementation PYOption
 
@@ -51,11 +52,14 @@ PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, xAxis);
 PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, yAxis);
 PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, series);
 PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, options);
+PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, graphic);
 
 PYAddMethodImpTemplate(PYOption, PYAxis, XAxis, xAxis);
 PYAddMethodImpTemplate(PYOption, PYAxis, YAxis, yAxis);
 PYAddMethodImpTemplate(PYOption, PYSeries, Series, series);
 PYAddMethodImpTemplate(PYOption, PYPolar, Polar, polar);
 PYAddMethodImpTemplate(PYOption, PYOption, Options, options);
+PYAddMethodImpTemplate(PYOption, MTGraphic, Graphic, graphic);
+
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09A55B0F20F9A79A0021FFB9 /* MTPieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */; };
 		09C2C3A920FC9A80007FDA8A /* echarts.html in Resources */ = {isa = PBXBuildFile; fileRef = 09C2C3A820FC9A80007FDA8A /* echarts.html */; };
+		09F0A03F215F7444006B5585 /* MTGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F0A03E215F7444006B5585 /* MTGraphic.m */; };
 		542992691E161CA50082986D /* WKEchartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542992681E161CA50082986D /* WKEchartsView.m */; };
 		5429926C1E1621F60082986D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5429926B1E1621F60082986D /* WebKit.framework */; };
 		542992701E1622E50082986D /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5429926E1E1622E50082986D /* WKWebViewController.m */; };
@@ -213,6 +214,8 @@
 		09A55B0D20F9A7990021FFB9 /* MTPieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPieLabel.h; sourceTree = "<group>"; };
 		09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPieLabel.m; sourceTree = "<group>"; };
 		09C2C3A820FC9A80007FDA8A /* echarts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = echarts.html; sourceTree = "<group>"; };
+		09F0A03D215F7443006B5585 /* MTGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGraphic.h; sourceTree = "<group>"; };
+		09F0A03E215F7444006B5585 /* MTGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGraphic.m; sourceTree = "<group>"; };
 		542992671E161CA50082986D /* WKEchartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKEchartsView.h; sourceTree = "<group>"; };
 		542992681E161CA50082986D /* WKEchartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKEchartsView.m; sourceTree = "<group>"; };
 		5429926B1E1621F60082986D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -618,6 +621,8 @@
 		6F4D58AD1D4FE34F00246943 /* Series */ = {
 			isa = PBXGroup;
 			children = (
+				09F0A03D215F7443006B5585 /* MTGraphic.h */,
+				09F0A03E215F7444006B5585 /* MTGraphic.m */,
 				09A55B0D20F9A7990021FFB9 /* MTPieLabel.h */,
 				09A55B0E20F9A7990021FFB9 /* MTPieLabel.m */,
 				6F4D58AE1D4FE34F00246943 /* PYCartesianSeries.h */,
@@ -1121,6 +1126,7 @@
 				6F9DCF061D7841D6007CEAD2 /* AppDelegate.m in Sources */,
 				6F4D58E11D4FE34F00246943 /* PYCategories.m in Sources */,
 				6F9DCF371D7841D6007CEAD2 /* main.m in Sources */,
+				09F0A03F215F7444006B5585 /* MTGraphic.m in Sources */,
 				6F4D59081D4FE34F00246943 /* PYSeries.m in Sources */,
 				6F4D58DB1D4FE34F00246943 /* PYAreaStyle.m in Sources */,
 				6FF570A41D861842007AA7A6 /* PYFunnelDemoOptions.m in Sources */,
