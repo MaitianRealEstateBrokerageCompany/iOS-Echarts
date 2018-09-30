@@ -14,6 +14,7 @@
         _type = @"text";
         _left = @30;
         _bottom = @30;
+        _style = [[MTGraphicStyle alloc] init];
     }
     return self;
 }
