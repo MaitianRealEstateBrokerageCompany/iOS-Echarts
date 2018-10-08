@@ -37,6 +37,7 @@ FOUNDATION_EXPORT PYPolarType const PYPolarTypeCircle;
 @property (nonatomic, strong) PYAreaStyle *splitArea;
 @property (nonatomic, copy) PYPolarType type;
 @property (nonatomic, strong) NSMutableArray *indicator;
+@property (nonatomic, strong) NSNumber *nameGap;
 
 PYInitializerTemplate(PYPolar, polar);
 
@@ -54,5 +55,6 @@ PYPropertyEqualTemplate(PYPolar, PYAxisLabel *, axisLabel);
 PYPropertyEqualTemplate(PYPolar, PYLineStyle *, splitLine);
 PYPropertyEqualTemplate(PYPolar, PYAreaStyle *, splitArea);
 PYPropertyEqualTemplate(PYPolar, NSMutableArray *, indicator);
+PYPropertyEqualTemplate(PYPolar, NSNumber *, nameGap);
 
 @end

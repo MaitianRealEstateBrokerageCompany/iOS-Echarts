@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class PYAxis, PYLegend, PYTimeline, PYTitle, PYGrid, PYToolbox, PYDataZoom, PYDataRange, PYPolar, PYRoamController, PYColor, PYTooltip, PYSeries,MTGraphic;
+@class PYAxis, PYLegend, PYTimeline, PYTitle, PYGrid, PYToolbox, PYDataZoom, PYDataRange, PYPolar, PYRoamController, PYColor, PYTooltip, PYSeries,MTGraphic,MTRadar;
 
 /**
  *
@@ -38,6 +38,7 @@
 @property (nonatomic, strong) NSMutableArray<PYSeries *> *series;
 @property (nonatomic, strong) NSMutableArray<PYOption *> *options;
 @property (nonatomic, strong) NSMutableArray<MTGraphic *> *graphic;
+@property (nonatomic, strong) MTRadar *radar;
 
 PYInitializerTemplate(PYOption, option);
 
@@ -61,6 +62,8 @@ PYPropertyEqualTemplate(PYOption, NSMutableArray *, yAxis);
 PYPropertyEqualTemplate(PYOption, NSMutableArray *, series);
 PYPropertyEqualTemplate(PYOption, NSMutableArray *, options);
 PYPropertyEqualTemplate(PYOption, NSMutableArray *, graphic);
+PYPropertyEqualTemplate(PYOption, MTRadar *, radar);
+
 
 PYAddMethodTemplate(PYOption, PYAxis, XAxis, xAxis);
 PYAddMethodTemplate(PYOption, PYAxis, YAxis, yAxis);

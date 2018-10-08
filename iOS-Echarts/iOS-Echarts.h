@@ -64,4 +64,6 @@
 #import "PYChordStyle.h"
 #import "MTPieLabel.h"
 #import "MTGraphic.h"
+#import "MTRadar.h"
+
 

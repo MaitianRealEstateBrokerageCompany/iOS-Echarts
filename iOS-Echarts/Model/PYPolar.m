@@ -76,5 +76,6 @@ PYPropertyEqualImpTemplate(PYPolar, PYAxisLabel *, axisLabel);
 PYPropertyEqualImpTemplate(PYPolar, PYLineStyle *, splitLine);
 PYPropertyEqualImpTemplate(PYPolar, PYAreaStyle *, splitArea);
 PYPropertyEqualImpTemplate(PYPolar, NSMutableArray *, indicator);
+PYPropertyEqualImpTemplate(PYPolar, NSNumber *, nameGap);
 
 @end

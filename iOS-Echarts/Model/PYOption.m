@@ -19,6 +19,7 @@
 #import "PYRoamController.h"
 #import "PYColor.h"
 #import "MTGraphic.h"
+#import "MTRadar.h"
 
 @implementation PYOption
 
@@ -53,6 +54,7 @@ PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, yAxis);
 PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, series);
 PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, options);
 PYPropertyEqualImpTemplate(PYOption, NSMutableArray *, graphic);
+PYPropertyEqualImpTemplate(PYOption, MTRadar *, radar);
 
 PYAddMethodImpTemplate(PYOption, PYAxis, XAxis, xAxis);
 PYAddMethodImpTemplate(PYOption, PYAxis, YAxis, yAxis);
