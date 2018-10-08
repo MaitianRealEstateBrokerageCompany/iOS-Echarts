@@ -15,6 +15,7 @@ PYInitializerImpTemplate(MTRadar);
 PYPropertyEqualImpTemplate(MTRadar, MTRadarName *, name);
 PYPropertyEqualImpTemplate(MTRadar, NSNumber*, nameGap);
 PYPropertyEqualImpTemplate(MTRadar, NSMutableArray *, indicator);
+PYPropertyEqualImpTemplate(MTRadar, id, radius);
 
 @end
 
