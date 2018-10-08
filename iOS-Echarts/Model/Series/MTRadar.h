@@ -13,10 +13,12 @@
 
 @property (nonatomic, strong) MTRadarName *name;
 @property (nonatomic, strong) NSNumber *nameGap;
+@property (nonatomic, strong) NSMutableArray *indicator;
 
 PYInitializerTemplate(MTRadar, radar);
 PYPropertyEqualTemplate(MTRadar, MTRadarName *, name);
 PYPropertyEqualTemplate(MTRadar, NSNumber*, nameGap);
+PYPropertyEqualTemplate(MTRadar, NSMutableArray *, indicator);
 
 @end
 
