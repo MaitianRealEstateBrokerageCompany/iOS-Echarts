@@ -190,6 +190,28 @@
                                    type: 'hideTip'
                                    });
         }
+        function changeLegendSelect(legendName) {
+            myChart.dispatchAction({
+                                   type: 'legendToggleSelect',
+                                   // 图例名称
+                                   name: legendName
+                                   });
+        }
+        function legendSelect(legendName) {
+            myChart.dispatchAction({
+                                   type: 'legendSelect',
+                                   // 图例名称
+                                   name: legendName
+                                   });
+        }
+        function legendUnselect(legendName) {
+            myChart.dispatchAction({
+                                   type: 'legendUnSelect',
+                                   // 图例名称
+                                   name: legendName
+                                   });
+        }
+        
         </script>
 </head>
 <body style="background-color: transparent;margin:0px"><!-- transparent-->
