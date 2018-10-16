@@ -190,6 +190,11 @@
                                    type: 'hideTip'
                                    });
         }
+        function showToolTip() {
+            myChart.dispatchAction({
+                                   type: 'showTip'
+                                   });
+        }
         function changeLegendSelect(legendName) {
             myChart.dispatchAction({
                                    type: 'legendToggleSelect',
