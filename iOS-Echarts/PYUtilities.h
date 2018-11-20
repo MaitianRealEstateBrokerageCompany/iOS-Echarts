@@ -108,6 +108,8 @@ static PYEchartAction const PYEchartActionMagicTypeChange = @"magicTypeChanged";
 static PYEchartAction const PYEchartActionDataViewChanged = @"dataViewChanged";
 static PYEchartAction const PYEchartActionTimelineChanged = @"timelineChanged";
 static PYEchartAction const PYEchartActionMapRoam         = @"mapRoam";
+static PYEchartAction const PYEchartActionOuterCanvasClick = @"outerCanvasClick";
+
 
 typedef NSString *PYEchartsViewImageType;
 static PYEchartsViewImageType const PYEchartsViewImageTypeJEPG = @"jpeg";

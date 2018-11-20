@@ -137,7 +137,11 @@
             }
         }
         function addEchartActionHandler(eventName) {
-            myChart.on(eventName, echartViewEvent);
+            if(eventName == 'outerCanvasClick') {
+                myChart.getZr().on('click',outerCanvasEvent);
+            }else {
+                myChart.on(eventName, echartViewEvent);
+            }
         }
         function removeEchartActionHandler(name) {
             myChart.un(name, echartViewAction);
@@ -168,6 +172,21 @@
                                             return val;
                                             });
                                             eval("window.webkit.messageHandlers." + param.type + ".postMessage(" + jsonString + ")");
+        }
+        //非图表区域点击事件
+        function outerCanvasEvent(params) {
+            var pointInPixel= [params.offsetX, params.offsetY];
+            if (!myChart.containPixel({seriesIndex: [0]},pointInPixel)) {
+                var seen = [];
+                var jsonString = JSON.stringify(params, function(key, val) {
+                                                if (val != null && typeof val == "object") {
+                                                if (seen.indexOf(val) >= 0) {return;}
+                                                seen.push(val);
+                                                }
+                                                return val;
+                                                });
+                                            eval("window.webkit.messageHandlers.outerCanvasClick" + ".postMessage(" + jsonString + ")");
+            }
         }
         // 高亮：只针对只有1种系列
         function highlightSlectIndex(index) {
